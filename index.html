@@ -7,11 +7,7 @@
     <title>The Prime Cut</title>
 </head>
 <body>
-    
-</body>
-</html>
-
-<!-- The Prime Cut - Luxury Steakhouse Skeleton -->
+    <!-- The Prime Cut - Luxury Steakhouse Skeleton -->
 <div class="app-container">
 
     <!-- 1. Live-Mutating Sticky Header -->
@@ -51,23 +47,41 @@
 
                 <!-- React Filter Bar Container -->
                  <div class="menu-filters">
-                    <button class="filter-btn active">All</button>
-                    <button class="filter-btn">Prime Cuts</button>
-                    <button class="filter-btn">Sides</button>
-                    <button class="filter-btn">Wines</button>
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="prime-cuts">Prime Cuts</button>
+                    <button class="filter-btn" data-filter="sides">Sides</button>
+                    <button class="filter-btn" data-filter="wines">Wines</button>
                  </div>
 
                  <!-- CSS Grid Container for Menu Cards -->
                   <div class="menu-grid">
 
-                    <!-- Individual Menu Item Card -->
-                     <article class="menu-card">
-                        <div class="card=header">
+                    <!-- Prime Cuts Article -->
+                     <article class="menu-card" data-category="prime-cuts">
+                        <div class="card-header">
                             <h3>24oz Tomahawk Ribeye</h3>
                             <span class="price">$125</span>
                         </div>
                         <p class="description">Dry-aged for 28 days, prepared with dynamic sea salt anad basted in atrisanl rosemary compound butter.</p>
                      </article>
+
+                     <!-- Sides Article -->
+                      <article class="menu-card" data-category="sides">
+                        <div class="card-header">
+                            <h3>Truffle Lobster Mac & Cheese</h3>
+                            <span class="price">$28</span>
+                        </div>
+                        <p class="description">Cavatappi pasta, fresh Maine lobster, five-cheese blend, topped with shaved black truffle.</p>
+                      </article>
+
+                      <!-- Wines Article -->
+                       <article class="menu-card" data-category="wines">
+                            <div class="card-header">
+                                <h3>Caymus Cabernet Sauvignon</h3>
+                                <span class="price">$42 / glass</span>
+                            </div>
+                            <p class="description">Napa Valley 2020. Rich, dark friut notes with velvety tannis and a supple finish.</p>
+                       </article>
                   </div>
            </section>
      </main>
@@ -77,3 +91,9 @@
         <p>&copy; 2026 The Prime Cut. Crafted with passion.</p>
       </footer>
 </div>
+
+    <!-- JavaScript Interactivity -->
+     <script src="scripts/app.js"></script>
+</body>
+</html>
+
